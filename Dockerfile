@@ -32,6 +32,7 @@ ENV JENKINS_UC https://updates.jenkins-ci.org
 ENV JENKINS_REF /usr/share/jenkins/ref
 
 RUN mkdir -p $JENKINS_REF/plugins
+RUN mkdir -p $JENKINS_REF/jobs
 RUN chown -R jenkins $JENKINS_REF
 
 USER jenkins
